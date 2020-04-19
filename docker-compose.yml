@@ -1,0 +1,15 @@
+version: '3'
+services:
+   gaju1:
+     container_name: gaju1
+     build:
+       context: ./
+     ports:
+       - 6002:80
+     volumes:
+        - './src:/var/www/html/'
+     networks:
+       - gaju
+networks:
+  gaju: 
+
